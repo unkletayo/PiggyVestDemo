@@ -98,20 +98,37 @@
   width: 100%;
 }
 
-.select {
-  padding: 20px 10px;
-  border: 2px solid #f0f0f0;
-  width: 100%;
+.dropdown {
+  position: relative;
 }
 
-.form-control select {
-  color: #777;
-  padding: 10px 0;
-  width: 100%;
+.dropdown-items {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 6px;
+  right: 10px;
 }
 
-.form-control select option {
+.dropdown-items img {
+  height: 24px;
+  width: 24px;
+}
+
+datalist {
+  display: none;
+}
+
+.datalist options {
+  height: 80px;
+  width: 400px;
   padding: 10px;
+}
+
+.datalist select option p {
+  font-size: 1.2rem;
+  color: #4a5568;
 }
 
 .form .btn {

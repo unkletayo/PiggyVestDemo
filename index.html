@@ -41,9 +41,16 @@
         <div class="form-control">
           <div class="dropdown-select">
             <label for="channels">How Did You Hear About Us? (Optional)</label>
-                   
-          <select autocomplete="on" id="channels">
-            <option value="click">Click To Select</option>
+            <div id="dropdown" class="dropdown">
+              <input class="inpt inpt2" type="text" placeholder="Click To Select" list="channels" />
+              <div id="dropdown-items" class="dropdown-items">
+                <p>|</p>
+                <img src="img/icons8-expand-arrow-50.png" alt="">
+              </div>
+            </div>
+               
+          <datalist autocomplete="on" id="channels">
+            <select multiple size=8 name="" id="select">
             <option value="facebook">Facebook</option>
             <option value="twitter">twitter</option>
             <option value="instagram">instagram</option>
@@ -54,7 +61,9 @@
             <option value="local newspaper">Local newspaper</option>
             <option value="event">At an event</option>
             <option value="other">Other</option>
-          </select>
+            </select>
+            
+          </datalist>
         </div>           
     </div>
       <div>
@@ -67,5 +76,8 @@
         ><p>Already have an account? Log In</p></a
       >
     </div>
+
+
+    <script src="js/script.js"></script>
   </body>
 </html>
